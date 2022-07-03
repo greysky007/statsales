@@ -46,9 +46,7 @@ public class StatsService {
     }
 
     public int amountDownAverage(int[] sales) {
-
-        StatsService service = new StatsService();
-        long average = service.amountAverage(sales);
+        long average = amountAverage(sales);
         int count = 0;
         for (int i = 0; i < sales.length; i++) {
             if (sales[i] < average) {
@@ -59,9 +57,7 @@ public class StatsService {
     }
 
     public int amountUpAverage(int[] sales) {
-
-        StatsService service = new StatsService();
-        long average = service.amountAverage(sales);
+        long average = amountAverage(sales);
         int count = 0;
         for (int i = 0; i < sales.length; i++) {
             if (sales[i] > average) {
